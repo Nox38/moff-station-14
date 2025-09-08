@@ -1,0 +1,17 @@
+- type: entity
+  name: gorlex security
+  parent: MobSyndicateFootsoldier
+  id: MobSyndicateSecurity
+  components:
+  - type: Loadout
+    prototypes:
+    - SyndicateSecurityGear
+
+- type: entity
+  name: gorlex marine
+  parent: MobSyndicateSecurity
+  id: MobSyndicateMarine
+  components:
+  - type: Loadout
+    prototypes:
+    - SyndicateMarineGear

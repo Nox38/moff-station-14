@@ -1,0 +1,28 @@
+- type: startingGear
+  parent: SyndicateOperativeGearCivilian
+  id: SyndicateSecurityGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    eyes: ClothingEyesHudSyndicate
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSyndicateOperative
+    shoes: ClothingShoesBootsCombatFilled
+    belt: Truncheon
+  storage:
+    back:
+    - BoxSurvivalSyndicate
+
+- type: startingGear
+  parent: SyndicateSecurityGear
+  id: SyndicateSecurityGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetRaid
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterArmorRaid
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSyndicateOperative
+    shoes: ClothingShoesBootsCombatFilled
+  storage:
+    back:
+    - BoxSurvivalSyndicate
