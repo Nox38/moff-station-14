@@ -4,7 +4,7 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/12/2025 18:04:28
+  time: 09/13/2025 21:38:11
   entityCount: 632
 maps:
 - 1
@@ -581,6 +581,13 @@ entities:
     - type: Transform
       pos: 6.5200872,6.5698824
       parent: 2
+- proto: BoxMagazineLightRifle
+  entities:
+  - uid: 159
+    components:
+    - type: Transform
+      pos: 9.235691,6.4587727
+      parent: 2
 - proto: BoxMagazinePistolCaselessRifle
   entities:
   - uid: 83
@@ -601,11 +608,6 @@ entities:
     components:
     - type: Transform
       pos: 9.247387,6.6615553
-      parent: 2
-  - uid: 81
-    components:
-    - type: Transform
-      pos: 9.294262,6.5053053
       parent: 2
 - proto: BoxMRE
   entities:
@@ -1524,15 +1526,18 @@ entities:
     - type: Transform
       pos: 10.581983,6.4604807
       parent: 2
-- proto: ClothingBackpackChameleonFill
+- proto: ClothingBackpackDuffel
   entities:
-  - uid: 137
+  - uid: 81
     components:
     - type: Transform
-      pos: 9.489574,4.61514
+      pos: 9.525572,4.577097
       parent: 2
-    missingComponents:
-    - ActiveListener
+  - uid: 151
+    components:
+    - type: Transform
+      pos: 9.572447,4.733347
+      parent: 2
 - proto: ClothingBackpackEngineering
   entities:
   - uid: 277
@@ -2197,28 +2202,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 7.5,2.5
       parent: 2
-- proto: ComputerTabletopId
-  entities:
-  - uid: 397
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,3.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        IdCardConsole-privilegedId: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 458
-        IdCardConsole-targetId: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: ComputerTabletopIFFSyndicate
   entities:
   - uid: 518
@@ -2234,6 +2217,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 7.5,1.5
+      parent: 2
+- proto: ComputerTabletopStationRecords
+  entities:
+  - uid: 137
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,3.5
       parent: 2
 - proto: CrateFreezer
   entities:
@@ -2749,6 +2740,9 @@ entities:
     - type: Transform
       pos: 10.5,10.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - CentralCommand
     - type: EntityStorage
       air:
         volume: 200
@@ -3520,12 +3514,6 @@ entities:
       parent: 457
 - proto: SyndicateIDCard
   entities:
-  - uid: 458
-    components:
-    - type: Transform
-      parent: 397
-    - type: Physics
-      canCollide: False
   - uid: 520
     components:
     - type: MetaData
