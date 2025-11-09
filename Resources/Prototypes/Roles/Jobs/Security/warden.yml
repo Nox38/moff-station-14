@@ -6,10 +6,10 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 18000 #5 hrs
+      time: 5h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 #10 hrs
+      time: 10h
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"
@@ -24,6 +24,8 @@
   - External
   - Detective
   - Cryogenics
+  - GenpopEnter
+  - GenpopLeave
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -32,8 +34,8 @@
   id: WardenGear
   equipment:
     eyes: ClothingEyesGlassesSecurity
-    id: WardenPDA
-    ears: ClothingHeadsetSecurity
+#    id: WardenPDA # Moffstation - PDA loadouts
+    ears: ClothingHeadsetAltSecurity # Moffstation - (Give Warden Command Comms)
     pocket1: WeaponPistolMk58
   storage:
     back:

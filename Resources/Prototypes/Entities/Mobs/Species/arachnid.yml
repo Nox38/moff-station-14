@@ -33,13 +33,15 @@
     - reagents: [Water]
       methods: [Touch]
       effects:
-      - !type:WearableReaction
+      - !type:SpawnEntityInInventory
         slot: head
-        prototypeID: WaterDropletHat
+        entity: WaterDropletHat
     - reagents: [Water, SpaceCleaner]
       methods: [Touch]
       effects:
-      - !type:WashCreamPieReaction
+      - !type:WashCreamPie
+  - type: Crawler #Moffstation start
+    speedModifier: .65 #Moffstation end
   # Damage (Self)
   - type: Bloodstream
     bloodReagent: CopperBlood
@@ -93,9 +95,10 @@
       - map: [ "id" ]
       - map: [ "outerClothing" ]
       - map: [ "belt" ] # Moffstation (Belts Over Outerwear)
-      - map: [ "enum.HumanoidVisualLayers.Tail" ] # Mentioned in moth code: This needs renZming lol.
+      - map: [ "enum.HumanoidVisualLayers.Tail" ] # Mentioned in moth code: This needs renaming lol.
       - map: [ "back" ]
       - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ] # Do these need to be here? (arachnid hair arachnid hair)
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
@@ -131,4 +134,4 @@
     speciesId: arachnid
 
 
-#>88w88
+#>88w88<

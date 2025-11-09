@@ -53,14 +53,14 @@
         - ToyAi
         - ToyNuke
         - ToyFigurinePassenger
-        - ToyGriffin
+        - ToyFigurineGriffin
         - ToyHonk
         - ToyIan
         - ToyMarauder
         - ToyMauler
         - ToyGygax
         - ToyOdysseus
-        - ToyOwlman
+        - ToyFigurineOwlman
         - ToyDeathRipley
         - ToyPhazon
         - ToyFireRipley
@@ -68,7 +68,7 @@
         - ToyRipley
         - ToySeraph
         - ToyDurand
-        - ToySkeleton
+        - ToyFigurineSkeleton
         - MysteryFigureBox
         - MysteryFigureBoxMoff # Moffstation - Adds moffstation themed figurines
       chance: 0.5
@@ -88,64 +88,7 @@
       rarePrototypes:
       - ToyFigurineNukieElite
       - ToyFigurineNukieCommander
-      # Moffstation - Start - Adding our own figurines
-      - ToyFigurineAwana
-      - ToyFigurineBoxcar
-      - ToyFigurineBrad
-      - ToyFigurineBradBucket
-      - ToyFigurineBrisbane
-      - ToyFigurineBrisbaneBigHat
-      - ToyFigurineCassiel
-      - ToyFigurineCinnabar
-      - ToyFigurineCooks
-      - ToyFigurineCory
-      - ToyFigurineCrux
-      - ToyFigurineDarnell
-      - ToyFigurineDelana
-      - ToyFigurineDelivers
-      - ToyFigurineEchiara
-      - ToyFigurineEclipse
-      - ToyFigurineFaces
-      - ToyFigurineFails
-      - ToyFigurineFred
-      - ToyFigurineGigs
-      - ToyFigurineHot
-      - ToyFigurineIo
-      - ToyFigurineIris
-      - ToyFigurineJelob
-      - ToyFigurineJobs
-      - ToyFigurineJupiter
-      - ToyFigurineKatie
-      - ToyFigurineKrakatoa
-      - ToyFigurineKylie
-      - ToyFigurineLight
-      - ToyFigurineLightsSeeker
-      - ToyFigurineLilith
-      - ToyFigurineMolar
-      - ToyFigurineNyxie
-      - ToyFigurineNyxilath
-      - ToyFigurinePeedee
-      - ToyFigurinePeriwinkle
-      - ToyFigurineRareel
-      - ToyFigurineRoomba
-      - ToyFigurineSamantha
-      - ToyFigurineSapphire
-      - ToyFigurineSawa
-      - ToyFigurineScribbles
-      - ToyFigurineSean
-      - ToyFigurineSeikret
-      - ToyFigurineSigerthe
-      - ToyFigurineSiliconwing
-      - ToyFigurineSouthbridge
-      - ToyFigurineStella
-      - ToyFigurineStrawberry
-      - ToyFigurineTalvi
-      - ToyFigurineTania
-      - ToyFigurineTar
-      - ToyFigurineVortex
-      - ToyFigurineWallace
-      - ToyFigurineWiggles
-      # Moffstation - End - Adding our own figurines
+      - MoffstationFigureSpawner # Moffstation - Saving us the hassle of keeping multiple lists up to date, we'll now just spawn the figurine spawner, and let it do the work
       rareChance: 0.05
       prototypes:
       - ToyFigurinePassenger
@@ -184,9 +127,9 @@
       - ToyFigurineSlime
       - ToyFigurineGreytider
       - ToyFigurineWizard
-      - ToyGriffin
-      - ToyOwlman
-      - ToySkeleton
+      - ToyFigurineGriffin
+      - ToyFigurineOwlman
+      - ToyFigurineSkeleton
       - ToyFigurineQueen
       - ToyFigurineSpaceDragon
       - ToyFigurineRatKing
