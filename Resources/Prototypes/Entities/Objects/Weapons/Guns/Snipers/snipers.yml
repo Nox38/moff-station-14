@@ -31,11 +31,11 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: BallisticAmmoProvider
-    capacity: 10
-    proto: CartridgeLightRifle
+    capacity: 5 # Moffstation - (Full Power Rifle) - The Mosin now uses a heavy caliber, dealing more damage, but with a lower capacity.
+    proto: CartridgeHeavyRifle # Moffstation - (Full Power Rifle) - See above.
     whitelist:
       tags:
-      - CartridgeLightRifle
+      - CartridgeHeavyRifle # Moffstation - (Full Power Rifle) - See above.
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

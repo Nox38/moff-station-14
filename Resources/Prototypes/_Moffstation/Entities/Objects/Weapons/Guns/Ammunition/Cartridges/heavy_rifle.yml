@@ -1,0 +1,52 @@
+﻿- type: entity
+  parent: BaseCartridgeHeavyRifle
+  id: CartridgeHeavyRifle
+  name: cartridge (.30 long rifle)
+  components:
+  - type: CartridgeAmmo
+    proto: BulletHeavyRifle
+
+- type: entity
+  parent: BaseCartridgeHeavyRifle
+  id: CartridgeHeavyRiflePractice
+  name: cartridge (.30 long rifle practice)
+  components:
+  - type: CartridgeAmmo
+    proto: BulletHeavyRiflePractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#dbdbdb"
+
+- type: entity
+  parent: BaseCartridgeHeavyRifle
+  id: CartridgeHeavyRifleIncendiary
+  name: cartridge (.30 long rifle incendiary)
+  components:
+  - type: CartridgeAmmo
+    proto: BulletHeavyRifleIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#ff6e52"
+
+- type: entity
+  parent: BaseCartridgeHeavyRifle
+  id: CartridgeHeavyRifleUranium
+  name: cartridge (.30 long rifle uranium)
+  components:
+  - type: CartridgeAmmo
+    proto: BulletHeavyRifleUranium
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#65fe08"
