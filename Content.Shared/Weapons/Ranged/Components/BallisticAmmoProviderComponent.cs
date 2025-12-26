@@ -47,7 +47,7 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
     public bool Cycleable = true;
 
-    // Moffstation - Begin (Manual Weapon Cycling)
+    // Moffstation - Begin (Manual Weapon Cycling) Todo: Change request on original PR: 'Make cycled nullable instead and update it, then add a method for IsCycled that checks if it's null or true.'
     /// <summary>
     /// Is the firearm currently cycled?
     /// It cannot fire if is it not cycled.

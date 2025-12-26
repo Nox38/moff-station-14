@@ -234,7 +234,7 @@ public abstract partial class SharedGunSystem
         Cycle(uid, component, coordinates);
 
         // Moffstation - Begin (Manual Weapon Cycling)
-        component.Cycled = true;
+        component.Cycled = true; // Todo: Change requested on original PR: 'This should be getting set by the Cycle function or returned by it.'
 
         // Moffstation - End
         var text = Loc.GetString(shots == 0 ? "gun-ballistic-cycled-empty" : "gun-ballistic-cycled");
@@ -274,7 +274,7 @@ public abstract partial class SharedGunSystem
     private void OnBallisticTakeAmmo(EntityUid uid, BallisticAmmoProviderComponent component, TakeAmmoEvent args)
     {
         // Moffstation - Begin (Manual Weapon Cycling)
-        //give up loading if the gun isn't cycled
+        // give up loading if the gun isn't cycled
         if (!component.IsCycled)
             return;
 
@@ -309,9 +309,7 @@ public abstract partial class SharedGunSystem
         }
 
         // Moffstation - Begin (Manual Weapon Cycling)
-        //un-cycle the firearm
-        if (!component.AutoCycle)
-            component.Cycled = false;
+        component.Cycled = component.AutoCycle;
 
         // Moffstation - End
         UpdateBallisticAppearance(uid, component);
