@@ -57,6 +57,10 @@
       map: [ "enum.SolutionContainerLayers.Fill" ]
       visible: false
   - type: Appearance
+  # Moffstation - Begin (Manual Weapon Cycling)
+  - type: BallisticAmmoProvider
+    autoCycle: false
+  # Moffstation - End
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     fillBaseName: base

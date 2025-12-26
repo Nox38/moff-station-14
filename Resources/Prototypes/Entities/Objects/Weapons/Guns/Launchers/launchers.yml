@@ -57,6 +57,7 @@
     whitelist:
       tags:
         - Grenade
+    autoCycle: false # Moffstation - (Manual Weapon Cycling)
     capacity: 3
     proto: GrenadeFrag
     soundInsert:

@@ -21,6 +21,12 @@ public sealed partial class GunSystem
     {
         EntityUid? ent = null;
 
+        // Moffstation - Begin (Manual Weapon Cycling)
+        //if the gun isn't cycled (so it being cycled right now) then don't bother ejecting ammo
+        if (!component.IsCycled)
+            return;
+
+        // Moffstation - End
         // TODO: Combine with TakeAmmo
         if (component.Entities.Count > 0)
         {

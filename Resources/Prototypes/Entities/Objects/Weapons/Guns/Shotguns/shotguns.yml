@@ -182,6 +182,10 @@
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
     fireRate: 1
+  # Moffstation - Begin (Manual Weapon Cycling)
+  - type: BallisticAmmoProvider
+    autoCycle: false
+  # Moffstation - End
   - type: GunSpreadModifier
     spread: 0.6
   - type: Tag
