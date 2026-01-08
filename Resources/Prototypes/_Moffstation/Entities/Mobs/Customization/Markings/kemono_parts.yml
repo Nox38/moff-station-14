@@ -1,0 +1,22 @@
+- type: marking
+  id: DogEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf]
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:SkinColoring
+    layers:
+      ears_cat_inner:
+        type:
+          !type:SimpleColoring
+            color: "#FFFFFF"
+  sprites:
+  - sprite: _Moffstation/Mobs/Customization/dog_parts.rsi
+    state: ears_dog_outer
+  - sprite: _Moffstation/Mobs/Customization/dog_parts.rsi
+    state: ears_dog_inner
