@@ -33,7 +33,6 @@
   id: GunGameHoS
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoS
-    back: WeaponEnergyShotgun
     outerClothing: ClothingOuterCoatHoSTrench
     belt: ClothingBeltSecurity
     pocket1: TelescopicShield
@@ -70,7 +69,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     back: MagazineShotgunIncendiary
-    outerClothing: ClothingOuterArmorRaid
+    outerClothing: ClothingOuterArmorBasic
     belt: ClothingBeltMilitaryWebbing
     pocket1: MagazineShotgun
     pocket2: MagazineShotgunSlug
@@ -81,13 +80,12 @@
   id: GunGameWarden
   equipment:
     jumpsuit: ClothingUniformJumpsuitWarden
-    back: MagazineShotgunSlug
     outerClothing: ClothingOuterCoatWarden
     belt: ClothingBeltSecurity
     pocket1: CombatKnife
-    pocket2: MagazineShotgun
+    pocket2: WeaponPistolMk58
   inhand:
-  - WeaponShotgunEnforcer
+  - WeaponEnergyShotgun
 
 - type: startingGear
   id: GunGameERTRifleman
@@ -108,7 +106,7 @@
     back: MagazineShotgunIncendiary
     outerClothing: ClothingOuterArmorBasic
     belt: ClothingBeltSecurityWebbing
-    pocket1: TearGasGrenade
+    pocket1: MagazineShotgun
     pocket2: MagazineShotgun
   inhand:
   - WeaponShotgunKammerer
@@ -140,16 +138,16 @@
   id: GunGameCCRepresentative
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomFormal
-    back: MagazineMagnumAP
+    back: MagazineMagnum
     outerClothing: ClothingOuterArmorCentcommCarapace
     belt: ClothingBeltHolster
     pocket1: PenCentcom
-    pocket2: MagazineMagnumAP
+    pocket2: MagazineMagnum
   inhand:
   - WeaponPistolN1984
 
 - type: startingGear
-  id: GunGameMercenary
+  id: GunGameMercenaryRifle
   equipment:
     jumpsuit: ClothingUniformJumpsuitMercenary
     back: MagazineLightRifle
@@ -166,11 +164,12 @@
     jumpsuit: ClothingUniformJumpsuitCaptain
     back: DrinkFlask
     outerClothing: ClothingOuterArmorCaptainCarapace
-    belt: ClothingBeltSheathFilled
+    belt: ClothingBeltSheath
     pocket1: PenCap
     pocket2: NukeDiskFake
   inhand:
   - WeaponAntiqueLaser
+  - CaptainSabre
 
 - type: startingGear
   id: GunGameNinja
@@ -178,29 +177,28 @@
     jumpsuit: ClothingUniformJumpsuitNinja
     back: ThrowingStarNinja
     outerClothing: ClothingOuterSuitSpaceNinja
-    belt: EnergyKatana
     pocket1: ThrowingStarNinja
     pocket2: ThrowingStarNinja
   inhand:
-  - ThrowingStarNinja
+  - EnergyKatana
 
 - type: startingGear
-  id: GunGameWarOpsCrew
+  id: GunGameShitSec # I'm a security main I can make these jokes :godo:
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
-    back: WeaponTemperatureGun
     outerClothing: ClothingOuterArmorBasic
-    belt: Truncheon
-    pocket1: TelescopicShield
-    pocket2: RadioHandheldSecurity
+    pocket1: TearGasGrenade
+    pocket2: TearGasGrenade
   inhand:
-  - WeaponXrayCannon
+  - Truncheon
+  - TelescopicShield
 
 - type: startingGear
   id: GunGameBotanist
   equipment:
     jumpsuit: ClothingUniformOveralls
     back: WeaponRevolverPython
+    gloves: ClothingHandsGlovesLeather
     outerClothing: ClothingOuterApronBotanist
     belt: ClothingBeltPlant
     pocket1: DeathNettle
@@ -215,10 +213,11 @@
     back: MagazinePistolHighCapacity
     outerClothing: ClothingOuterVestTank
     belt: ClothingBeltStorageWaistbag
-    pocket1: WeaponPistolViper
+    pocket1: MagazinePistolHighCapacity
     pocket2: MagazinePistolHighCapacity
   inhand:
-  - CaneSheathFilled
+  - CaneBlade
+  - WeaponPistolViper
 
 - type: startingGear
   id: GunGamePoacher
@@ -260,12 +259,12 @@
   id: GunGameSalvage
   equipment:
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
-    back: WeaponCrusherGlaive
     outerClothing: ClothingOuterVestTank
     belt: ClothingBeltSalvageWebbing
     pocket1: PKAUpgradeFireRate
     pocket2: PKAUpgradeDamage
   inhand:
+  - SurvivalKnife
   - WeaponProtoKineticAccelerator
 
 - type: startingGear
@@ -273,20 +272,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitBartender
     belt: ClothingBeltBandolier
-    pocket1: MagazineShotgun
-    pocket2: MagazineShotgunSlug
+    pocket1: ShellShotgun
+    pocket2: ShellShotgun
   inhand:
   - WeaponShotgunSawn
   - BrokenBottle
-
-- type: startingGear
-  id: GunGamePursuer
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitDetective
-    outerClothing: ClothingOuterCoatDetective
-  inhand:
-  - ArmBlade
-  - ArmBlade
 
 - type: startingGear
   id: GunGameHoP
@@ -294,7 +284,6 @@
     jumpsuit: ClothingUniformJumpsuitHoP
     back: BriefcaseBrownFilled
     outerClothing: ClothingOuterVestTank
-    belt: ClothingBeltStorageWaistbag
     pocket1: SpeedLoaderMagnum
     pocket2: SpeedLoaderMagnum
   inhand:
@@ -323,7 +312,6 @@
     pocket2: AnomalyScanner
   inhand:
   - SpearUranium
-  - SpearUranium
 
 - type: startingGear
   id: GunGameChef
@@ -343,14 +331,6 @@
     pocket1: AppraisalTool
   inhand:
   - ClothingHandsKnuckleDustersQM
-
-- type: startingGear
-  id: GunGameParamedic
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitParamedic
-    outerClothing: ClothingOuterVestTank
-  inhand:
-  - Scalpel
 
 - type: startingGear
   id: GunGameTider
